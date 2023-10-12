@@ -1,0 +1,12 @@
+@media screen and (max-width:640px){
+    #wrapper{border:2px solid red;}
+    .form-row{flex-direction: column}
+  section#game-space, section#game-settings form{
+      flex-direction: column;
+    
+    }   
+    legend {
+      position: relative;
+      left: 5%;
+      color: maroon;}
+}

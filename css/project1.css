@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+html, body{ width:100%;
+    height: 100%;
+}
+body {display: flex;
+border:2px slid red;
+}
+
+section#wrapper{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border:2px solid blue;
+     overflow: auto;
+
+}
+header, footer {
+flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: coral;
+   
+}
+
+section#main{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*! align-items: center; */
+    background-color:bisque; 
+    padding: 1em;
+}
+section#game-settings{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    background: lightsteelblue
+}
+section#stats-row{
+    flex:2;
+    border:2px dotted red;
+    background:lightcyan;
+}
+section#stats-row{
+    flex: 5;
+    display: flex;
+    flex-direction: column;;
+    background-color: azure;
+    padding: 1em;
+} 
+section#game-space{
+    flex: 6;
+    padding: 1em;
+    display: flex;
+    background: lightgrey;
+    flex-direction: row;
+    border:2px solid red;
+}
+section#playground{
+    flex: 5;
+    display: flex;
+    flex-direction: column;;
+    background-color: azure;
+    padding: 1em;
+} 
+section#stats-row{
+    background: lightgoldenrodyellow;
+    flex: 2;
+    display: flex;
+    overflow: auto;
+    height: 20em;
+}
+section#main-board{
+    flex: 9;
+    border:5px solid maroon;
+    /*! padding: 0.5em; */
+    display: flex;
+    flex-direction: column;
+    /*! gap:0.2em; */
+    justify-content: space-evenly;   
+}
+section#last-row{
+    flex: 1;
+    border:2px solid maroon;
+    padding: 0.5em;
+    display: flex;
+    gap:0.2em;
+    justify-content: space-evenly; 
+}
+#solution-row {display: flex; border:1px dotted red; flex: 1;}
+
+section#main-board .row{
+    flex: 1;
+    border:1px dotted;
+    /*! gap: 0.3em; */
+    display: flex;
+    justify-content: space-evenly;
+}
+section#main-board .row *{flex: 1;}
+/* //------------------------- */
+section#game-settings form {
+display: flex;
+flex-direction: row;
+    border:2px dotted red;
+    /*! padding: 0.5em; */
+    /*! gap: 1em; */;
+
+flex: 1;
+}
+.form-row{
+/*! flex: 1; */
+    border:1px dotted green;
+    padding: 0.5em;
+    display: flex;
+    gap: 0.5em;
+}
+fieldset {
+flex: 1;
+display: flex;
+/*! flex-direction: column; */
+/*! justify-content: space-evenly; */
+gap: 0.5em;
+align-items: center;
+}
+fieldset#start-game{flex:0.5}
+fieldset section {display: flex; 
+    /*! flex-direction: row; */
+    /*! justify-content: space-evenly; */ 
+    gap: 0em;
+flex-direction: column;
+}
+fieldset section * { border:1px dotted; 
+    /*! width:50%; */ display: flex; 
+    justify-content: flex-end;}
+legend{
+
+}
+
+section.group-radio{display: flex;
+flex-direction: row;
+}
+section.radio{
+    border:2px dotted red;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+label {/*! flex: 4; */}
+/* input{flex:2;} */
+input#name {
+   height: 2em;
+   /*! max-width: 8em; */
+}
+
+button#game-start:enabled, button#game-start:disabled, .enabled {
+background: maroon;
+    color: white;
+    font-weight: 900;
+    padding: 0.5em; 
+    border-radius: 0.8em;
+    background:  red;
+}
+button#btn-start:disabled, button#game-start:disabled, .disabled{
+background: darkgray;
+    color: white;
+    font-weight: 900;
+    padding: 0.5em;   
+}
+.cell{
+    border:3px solid;
+    font-weight: bold;
+    flex: 1;
+    font-size: 1.5em;
+}
+
+.cell-wrapper {border: 1px dotted  red; 
+    /*! padding: 1em; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;}
+.cell-rgb { font-size:0.5em; background: white; /*! color: white; */flex: 0.5;}
+/* ----------------- */
+table {border:2px dotted blue}
+th{background: darkcyan; color: white}
+td {border:2px solid darkblue; text-align: center}
+
+tr:nth-child(n+1) {background-color: lightcyan;}
